@@ -1,18 +1,16 @@
-import "./style.css";
-import exampleModule from "./modules/exampleModule";
+import './style.css';
+import exampleModule from './modules/exampleModule';
 
-const testTitle = "Template working!";
-const testModule = exampleModule("Hello, world!");
+const testTitle = 'Template working!';
+const testModule = exampleModule('Hello, world!');
 
-const titleElement = document.createElement("h1");
+const titleElement = document.createElement('h1');
 titleElement.textContent = testTitle;
-titleElement.classList.add("title");
+titleElement.classList.add('title');
 
-const moduleElement = document.createElement("p");
+const moduleElement = document.createElement('p');
 moduleElement.textContent = testModule;
-moduleElement.classList.add("module");
+moduleElement.classList.add('module');
 
 document.body.appendChild(titleElement);
 document.body.appendChild(moduleElement);
-
-console.log("Hello, world!");
